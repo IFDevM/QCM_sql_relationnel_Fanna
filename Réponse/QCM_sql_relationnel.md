@@ -49,7 +49,7 @@ erDiagram
 
    - [ ] A. Foreign Key
 
-**Commentaires:** La bonne réponse est A  
+**Commentaires:** La bonne réponse est A  \
 C'est une clé étrangère (Foreign Key) qui est  utilisée ici pour créer une relation entre les deux tables, assurant l'intégrité référentielle en liant la clé primaire d'une table parent à une colonne de la table enfant.
 
 
@@ -58,7 +58,7 @@ C'est une clé étrangère (Foreign Key) qui est  utilisée ici pour créer une 
 
    - [ ] D. Plusieurs à un (one to many)
 
-**Commentaires:** La bonne réponse est D
+**Commentaires:** La bonne réponse est D\
 Un auteur peut avoir plusieurs posts (publication), mais chaque publication est associée à un seul auteur. C'est une relation plusieurs-à-un (one-to-many).
 
 
@@ -68,7 +68,7 @@ Un auteur peut avoir plusieurs posts (publication), mais chaque publication est 
 
    - [ ] A. Lorsqu'un enregistrement est supprimé, les enregistrements dépendants (table propriétaire) sont également supprimés.
    
-**Commentaires:** La bonne réponse est A
+**Commentaires:** La bonne réponse est A\
 La contrainte ON DELETE CASCADE signifie que lorsqu'on supprime un enregistrement parent ça entraîne automatiquement la suppression des enregistrements enfants qui sont liés.
 
 
@@ -77,7 +77,7 @@ La contrainte ON DELETE CASCADE signifie que lorsqu'on supprime un enregistremen
 
    - [ ] A. Foreign Key
 
-**Commentaires:** La bonne réponse est A
+**Commentaires:** La bonne réponse est A\
 La relation entre Post et Category utilise une table de liaison (Post_Category). La clé étrangère dans la table de liaison va servir à maintenir l'intégrité référentielle entre ces deux tables.
 
 
@@ -86,7 +86,7 @@ La relation entre Post et Category utilise une table de liaison (Post_Category).
   
    - [ ] C. Cat_Post
  
-**Commentaires:** La bonne réponse est C
+**Commentaires:** La bonne réponse est C\
 Un post peut appartenir à plusieurs catégories et en revanche une catégorie peut contenir plusieurs posts, ce qui définit une relation plusieurs-à-plusieurs.
 
 
@@ -95,7 +95,7 @@ Un post peut appartenir à plusieurs catégories et en revanche une catégorie p
 
    - [ ] B. Une deuxième Primary Key dans une des deux tables
 
-**Commentaires:** La bonne réponse est B
+**Commentaires:** La bonne réponse est B\
 
 
 
@@ -103,7 +103,7 @@ Un post peut appartenir à plusieurs catégories et en revanche une catégorie p
 
    - [ ] A. post_id
 
-**Commentaires:** La bonne réponse est A
+**Commentaires:** La bonne réponse est A\
 Chaque auteur a au plus un avatar et chaque avatar appartient à un seul auteur, ce qui définit une relation un-à-un.
 
 
@@ -113,7 +113,7 @@ Chaque auteur a au plus un avatar et chaque avatar appartient à un seul auteur,
 
    - [ ] D. Empêche la suppression des enregistrements parents.
 
-**Commentaires:** La bonne réponse est D
+**Commentaires:** La bonne réponse est D\
 La contrainte ON DELETE SET NULL signifie que la suppression d'un enregistrement parent est empêchée 
 
 
@@ -122,7 +122,7 @@ La contrainte ON DELETE SET NULL signifie que la suppression d'un enregistrement
   
    - [ ] C. Plusieurs à plusieurs (many to many)
  
-**Commentaires:** La bonne réponse est C
+**Commentaires:** La bonne réponse est C\
 Un post peut appartenir à plusieurs catégories et une catégorie peut contenir plusieurs posts, c'est une relation plusieurs-à-plusieurs.
 
 
@@ -131,7 +131,7 @@ Un post peut appartenir à plusieurs catégories et une catégorie peut contenir
   
     - [ ] D. author_id
 
-**Commentaires:** La bonne réponse est D
+**Commentaires:** La bonne réponse est D\
 author_id dans la table Post est une clé étrangère qui référence l'identifiant de la table Author.
 
 
@@ -141,7 +141,7 @@ author_id dans la table Post est une clé étrangère qui référence l'identifi
 
     - [ ] D. On ne peut pas supprimer un `Author` si il y a des références dans la table `Post`
 
-**Commentaires:** La bonne réponse est D
+**Commentaires:** La bonne réponse est D\
 Par défaut, si une clé étrangère empêche la suppression d'un enregistrement parent lorsque des enregistrements enfants y font référence, l'auteur ne pourra pas être supprimé.
 
 
@@ -150,7 +150,7 @@ Par défaut, si une clé étrangère empêche la suppression d'un enregistrement
   
     - [ ] D. Aucun des choix
 
-**Commentaires:** La bonne réponse est D
+**Commentaires:** La bonne réponse est D\
 Une relation plusieurs-à-plusieurs va nécessiter une table d'association pour stocker les liens entre les deux tables.
 
 
@@ -159,7 +159,7 @@ Une relation plusieurs-à-plusieurs va nécessiter une table d'association pour 
    
     - [ ] C. La suppression de l'enregistrement parent est empêchée.
 
-**Commentaires:** La bonne réponse est C
+**Commentaires:** La bonne réponse est C\
 La contrainte ON DELETE RESTRICT  va empêcher la suppression d'un enregistrement parent dans le cas ou il est référencé par des enregistrements enfants.
 
 
@@ -169,5 +169,5 @@ La contrainte ON DELETE RESTRICT  va empêcher la suppression d'un enregistremen
     - [ ] A. En utilisant une clé étrangère unique dans `Avatar`.
   
 
-**Commentaires:** La bonne réponse est A 
+**Commentaires:** La bonne réponse est A \
 Une clé étrangère unique dans la table Avatar garantit qu'un auteur ne peut avoir au plus qu'un avatar.
